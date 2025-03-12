@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML/CSS基礎</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="w-75 m-auto">
+    <header class="my-4">
+      <h4 class="text-decoration-underline">HTML/CSS基礎</h4>
+    </header>
+
+    <main>
+      <!-- 教材コード -->
+      <section class="mb-4 p-4 border border-primary">
+        <h4 class="mb-4 text-decoration-underline">教材コード</h4>
+
+        <h2>バリデーションを行います。</h2>
+        <form id="validationForm">
+        <table>
+            <tr>
+                <td>お名前</td>
+                <td>
+                    <input type="text" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>メールアドレス</td>
+                <td>
+                    <input type="text" id="email">
+                </td>
+            </tr>
+        </table>
+
+        <input type="button" id="check-btn" value="チェック" >
+        <div id="output" style="color: red;"></div>
+        </form>
+
+        <div id="dom-code"></div>
+      </section>
+
+      <!-- 天気予報 -->
+      <section class="mb-4 p-4 border border-primary">
+        <h4 class="mb-4 text-decoration-underline">天気予報</h4>
+        <div id="weather-html"></div>
+      </section>
+    </main>
+
+    <footer class="p-2 text-center">
+      <button class="btn btn-success" id="reset-btn">リセット</button>
+    </footer>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="module" src="js/script.js" ></script>
+</body>
+</html>

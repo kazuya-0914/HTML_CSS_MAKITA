@@ -1,0 +1,45 @@
+/* --- DOMコード --- */
+#dom-code {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+/* --- 天気予報 --- */
+#weather-html {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* --- 教材コード --- */
+.blue-screen {
+  height: 100vh;
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  background-color: #88f;
+}
+
+.red-screen {
+  height: 100vh;
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  background-color: #f88;
+}
+
+#back-btn {
+  display: none;
+
+  padding: 40px 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;;
+  text-decoration: none;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+h1 {
+  border:1px solid black;
+  margin: 0 0 0 20px;
+  padding: 0 20px;
+}
+
+.header-inner a {
+  color: black;
+  font-size: 34px;
+  text-decoration: none;
+}
+
+nav .menu { 
+  display: flex;
+  padding-left: 0;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+nav a {
+  color:black;
+  font-size: 34px;
+  text-decoration: none;
+}
+
+
+.camera {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+h2 {
+  margin: 0;
+  padding: 60px 0 40px;
+  text-align: center;
+  font-size: 34px;
+}
+
+
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin:  20px auto;
+  padding: 10px;
+  max-width: 960px;
+}
+
+.maru {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+
+.works-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.item {
+  margin: 0 10px;
+  padding-bottom: 60px;
+  width: 20%;
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .works-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+}
